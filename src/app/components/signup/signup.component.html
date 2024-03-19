@@ -2,6 +2,7 @@
     <div
         class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <form class="max-w-sm mx-auto" #form="ngForm" (ngSubmit)="onSubmit()">
+            <h5 class="text-xl font-medium text-gray-900 dark:text-white mb-4">Estamos encantados de conocerte, por favor cuéntanos sobre ti</h5>
             <div class="mb-5">
                 <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tu nombre de
                     usuario</label>
@@ -12,14 +13,14 @@
             <div class="mb-5">
                 <label for="password"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
-                <input type="password" id="password" name="password" [(ngModel)]="userData.password"
+                <input type="password" id="password" name="password" [(ngModel)]="userData.password" placeholder="••••••••"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                     required />
             </div>
             <div class="mb-5">
                 <label for="repeat-password"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repetir contraseña</label>
-                <input type="password" id="repeat-password" name="repeatPassword" [(ngModel)]="userData.repeatPassword"
+                <input type="password" id="repeat-password" name="repeatPassword" [(ngModel)]="userData.repeatPassword" placeholder="••••••••"
                     class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                     required />
             </div>

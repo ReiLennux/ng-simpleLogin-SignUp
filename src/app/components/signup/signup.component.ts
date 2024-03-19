@@ -26,12 +26,13 @@ export class SignupComponent {
       try {
         console.log(newUser);
         await this.userService.postUser(newUser);
-        this.router.navigateByUrl('/welcome');
+        this.router.navigateByUrl('/login');
       } catch (error) {
         console.error('Error al crear usuario:', error);
       }
     } else {
       console.error('Las contraseñas no coinciden');
+
     }
   }
 }
